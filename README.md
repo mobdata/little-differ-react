@@ -32,7 +32,7 @@ In a prototypical example, you will have three versions of one document in JSON 
 
 Please Note: Little-Differ-React expects that each document will have a _rev key indicating the revision id of each document. If you are using CouchDb, this is standard.     
 ````javascript
-import AppComponent from '@jacobs.com/little-differ-react/'
+import AppComponent from '@mobdata/little-differ-react/'
 
 
 function changeRevisedDataForCaller(value: object) {

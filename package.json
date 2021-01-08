@@ -1,6 +1,6 @@
 {
   "name": "@mobdata/little-differ-react",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A diff and merge react component for JSON docs!",
   "main": "./lib/components/app/component.js",
   "scripts": {
@@ -23,18 +23,10 @@
     ]
   },
   "contributors": [
-    {
-      "name": "Juliet Adams"
-    },
-    {
-      "name": "Sara Kim"
-    },
-    {
-      "name": "Connor Bulakites"
-    },
-    {
-      "name": "Marita Carballo"
-    }
+    "Juliet Adams",
+    "Sara Kim",
+    "Connor Bulakites",
+    "Marita Carballo"
   ],
   "license": "MIT",
   "dependencies": {
@@ -86,5 +78,14 @@
     "typescript-eslint-parser": "^22.0.0",
     "webpack": "^5.4.0",
     "webpack-cli": "^4.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mobdata/little-differ-react.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/mobdata/little-differ-react/issues"
+  },
+  "homepage": "https://github.com/mobdata/little-differ-react#readme"
 }
