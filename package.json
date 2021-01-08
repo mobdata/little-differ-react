@@ -1,0 +1,90 @@
+{
+  "name": "@jacobs.com/little-differ-react",
+  "version": "0.0.0",
+  "description": "A diff and merge react component for JSON docs!",
+  "main": "./lib/components/app/component.js",
+  "scripts": {
+    "babel": "babel src/ --out-dir lib/ --extensions \".ts,.tsx,.js\"",
+    "build": "webpack --config webpack.config.js",
+    "open": "open ./public/index.html",
+    "launch": "npm run build; npm run open",
+    "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
+    "lint": "eslint --ignore-path .gitignore --config .eslintrc.ts src/index.tsx 'src/components/**' 'src/actions/**' 'src/constants/**' 'src/reducers/**' 'src/store/**' 'src/utils/**'",
+    "test": "npm run babel; jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "jest": {
+    "setupFiles": [
+      "./src/test/jestsetup.js"
+    ],
+    "transformIgnorePatterns": [
+      "./public/"
+    ]
+  },
+  "contributors": [
+    {
+      "name": "Juliet Adams"
+    },
+    {
+      "name": "Sara Kim"
+    },
+    {
+      "name": "Connor Bulakites"
+    },
+    {
+      "name": "Marita Carballo"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@mobdata/little-differ": "0.0.0",
+    "@material-ui/core": "^4.11.0",
+    "@types/react": "^16.9.55",
+    "@types/react-dom": "^16.9.9",
+    "bootstrap": "^4.5.3",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-json-view": "^1.19.1",
+    "react-scroll-sync": "^0.8.0",
+    "react-test-renderer": "16.12.0",
+    "reactstrap": "^8.7.1",
+    "typescript": "^4.0.5"
+  },
+  "pre-commit": [
+    "precommit-msg",
+    "lint",
+    "test"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "@babel/preset-typescript": "^7.12.1",
+    "@typescript-eslint/parser": "^4.6.1",
+    "@typescript-eslint/eslint-plugin": "4.0.1",
+    "@typescript-eslint/typescript-estree": "^4.6.1",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.3",
+    "css-loader": "^5.0.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "enzyme-to-json": "^3.6.1",
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "jest": "^26.6.3",
+    "pre-commit": "^1.2.2",
+    "react-bootstrap-typescript": "0.0.9",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.0.8",
+    "typescript-eslint-parser": "^22.0.0",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.1.0"
+  }
+}

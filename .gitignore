@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+build
+lib
+npm-debug.log
+./src/components/app/npm-debug.log
+./src/components/diffView/npm-debug.log
+.idea
