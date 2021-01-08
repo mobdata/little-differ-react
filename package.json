@@ -1,5 +1,5 @@
 {
-  "name": "@jacobs.com/little-differ-react",
+  "name": "@mobdata/little-differ-react",
   "version": "0.0.0",
   "description": "A diff and merge react component for JSON docs!",
   "main": "./lib/components/app/component.js",
