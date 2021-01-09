@@ -1,12 +1,12 @@
 {
   "name": "@mobdata/little-differ-react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A diff and merge react component for JSON docs!",
   "main": "./lib/components/app/component.js",
   "scripts": {
     "babel": "babel src/ --out-dir lib/ --extensions \".ts,.tsx,.js\"",
-    "build": "webpack --config webpack.config.js",
-    "open": "open ./public/index.html",
+    "build": "npm run babel; webpack --config webpack.config.js",
+    "open": "xdg-open ./public/index.html",
     "launch": "npm run build; npm run open",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
     "lint": "eslint --ignore-path .gitignore --config .eslintrc.ts src/index.tsx 'src/components/**' 'src/actions/**' 'src/constants/**' 'src/reducers/**' 'src/store/**' 'src/utils/**'",
