@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 
-import { compareJSON } from '@jacobs.com/little-differ'
+import { compareJSON } from '@mobdata/little-differ'
 
 import AppComponent from '../components/app/component'
 import store from '../store/index';

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { sortByKey } from '@jacobs.com/little-differ'
+import { sortByKey } from '@mobdata/little-differ'
 
 import { Action } from '../actions/index';
 

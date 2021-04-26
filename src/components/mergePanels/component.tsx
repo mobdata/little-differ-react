@@ -12,7 +12,7 @@ import { ScrollSyncPane } from 'react-scroll-sync';
 import ReactJson from 'react-json-view'
 import Grid from '@material-ui/core/Grid'
 
-import { compareTripleJSON } from '@jacobs.com/little-differ/lib/tripleDiffer'
+import { compareTripleJSON } from '@mobdata/little-differ/lib/tripleDiffer'
 
 import * as actions from '../../actions'
 import TripleDiffView from '../tripleDiffView/component'

@@ -1,6 +1,6 @@
 {
   "name": "@mobdata/little-differ-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A diff and merge react component for JSON docs!",
   "main": "./lib/components/app/component.js",
   "scripts": {
